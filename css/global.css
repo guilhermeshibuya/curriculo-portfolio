@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --w: #ffffff;
+  --c1: #f5f5f5;
+  --c2: #f0f0f0;
+  --c3: #e0e0e0;
+  --c4: #cccccc;
+  --c6: #a3a3a3;
+  --c7: #8f8f8f;
+  --c10: #525252;
+  --c13: #141414;
+  --c14: #000000;
+  --p2: #ba72f3;
+  --p3: #904bdf;
+  --p4: #6928c3;
+}
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: var(--c13);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: var(--c10);
+}
+
+p strong {
+  color: var(--c13);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  gap: 100px;
+}
+
+.subtitulo {
+  font-family: "Playfair Display";
+  font-size: 8rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
